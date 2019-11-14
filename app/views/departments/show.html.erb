@@ -1,10 +1,11 @@
-<h1><%= @department.name %></h1>
+<div class="jumbotron text-center"><h1><%= @department.name %></h1>
 <hr />
-<p>What would you like to do?</p>
+<p>What would you like to do?</p></div>
+<div class = container>
 <%= link_to 'View Items', department_items_path(@department) %>
 <br />
 <%= link_to 'Edit Department', edit_department_path(@department.id) %>
 <br />
 <%= link_to 'Delete Department', department_path(@department.id), method: :delete %>
 <br />
-<%= link_to 'Back To Departments', departments_path %>
+<%= link_to 'Back To Departments', departments_path %></div>

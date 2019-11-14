@@ -40,6 +40,8 @@ class ItemsController < ApplicationController
     redirect_to department_items_path(@department)
   end
 
+  # def number_to_currency(price, precision: 2) 
+  # end
 
 private
   def set_item

@@ -1,11 +1,15 @@
-<h1><%= @department.name %>: <%= @item.name %></h1>
-<p>Item Price</p>
-<p><%= @item.price %></p>
-<p>Item Description</p>
-<p><%= @item.description %></p>
+<div class="jumbotron text-center"><h1><%= @department.name %>: <%= @item.name %></h1></div>
+
+<div class = container>
+<p><strong>Item Price:</strong></p>
+<p class="ml-4"><%= @item.price %></p>
+<p><strong>Item Description:</strong></p>
+<p class="ml-4"><%= @item.description %></p>
 
 <br/>
 
 <%= link_to 'Edit Item', edit_department_item_path([@department, @item]) %>
+<br/>
 <%= link_to 'Delete Item', [@department, @item], method: :delete %>
-<%= link_to 'Back', department_items_path %>
+<br/>
+<%= link_to 'Back', department_items_path %></div>
