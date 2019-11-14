@@ -10,6 +10,6 @@
 
 <%= link_to 'Edit Item', edit_department_item_path([@department, @item]) %>
 <br/>
-<%= link_to 'Delete Item', [@department, @item], method: :delete %>
+<%= button_to 'Delete Item', [@department, @item], method: :delete %>
 <br/>
 <%= link_to 'Back', department_items_path %></div>
